@@ -1,0 +1,679 @@
+nohup: ignoring input
+[DEBUG] CORE(21323,ffffa8bbdb70,python):2024-01-03-12:02:01.016.569 [mindspore/core/utils/log_adapter.cc:622] InitSubModulesLogLevel] MS_SUBMODULE_LOG_v=`{ANALYZER:2, CORE:2}`
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:01.058.048 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: CastCPUtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:01.058.097 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: FillCPUtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:01.058.115 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ScalarToTensorCPUtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:01.058.133 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: TupleToTensorCPUtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:01.058.147 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ListToTensorCPUtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:01.058.160 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ScalarCastCPUtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:01.058.174 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: CastCPUfalse
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:01.058.186 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: COO2CSRCPUfalse
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:01.058.200 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: CSR2COOCPUfalse
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:01.058.214 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: CSRDivCPUfalse
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:01.058.229 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: CSRGatherCPUfalse
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:01.058.242 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: CSRMMCPUfalse
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:01.058.255 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: CSRMulCPUfalse
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:01.058.268 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: CSRMVCPUfalse
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:01.058.282 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: CSRReduceSumCPUfalse
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:01.058.295 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: FillCPUfalse
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:01.058.308 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ScalarToTensorCPUfalse
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:01.058.321 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: TupleToTensorCPUfalse
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:01.058.345 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ListToTensorCPUfalse
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:01.058.360 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ScalarCastCPUfalse
+[DEBUG] ME(21323,ffffa8bbdb70,python):2024-01-03-12:02:01.060.932 [mindspore/ccsrc/runtime/hardware/device_context_manager.cc:217] TestLoadDynamicLib] Child process dlopen pid = 21403
+[INFO] ME(21323,ffffa8bbdb70,python):2024-01-03-12:02:01.780.617 [mindspore/ccsrc/runtime/hardware/device_context_manager.cc:226] TestLoadDynamicLib] Read from pipe failed, ret = 11, reason = Resource temporarily unavailable
+[INFO] ME(21323,ffffa8bbdb70,python):2024-01-03-12:02:01.780.673 [mindspore/ccsrc/runtime/hardware/device_context_manager.cc:264] LoadDynamicLib] Load dynamic library: libmindspore_ascend.so.2 failed. 
+[DEBUG] ME(21323,ffffa8bbdb70,python):2024-01-03-12:02:01.783.255 [mindspore/ccsrc/runtime/hardware/device_context_manager.cc:217] TestLoadDynamicLib] Child process dlopen pid = 21405
+[DEBUG] ME(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.487.195 [mindspore/ccsrc/runtime/hardware/device_context_manager.cc:232] TestLoadDynamicLib] Child process return: Success
+[DEBUG] ME(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.840.797 [mindspore/ccsrc/cxx_api/factory.cc:29] Register] Start register graph impl for Ascend310
+[DEBUG] ME(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.840.922 [mindspore/ccsrc/cxx_api/factory.cc:29] Register] Start register graph impl for Ascend
+[DEBUG] ME(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.841.083 [mindspore/ccsrc/cxx_api/factory.cc:56] Register] Start register model for Ascend310
+[DEBUG] ME(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.841.419 [mindspore/ccsrc/cxx_api/factory.cc:56] Register] Start register model for MS
+[INFO] KERNEL(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.847.994 [mindspore/ccsrc/plugin/device/ascend/kernel/bisheng/bisheng_kernel_build.cc:45] LoadBishengKernelsLibrary] Cannot dlopen /home/ma-user/anaconda3/envs/MindSpore/lib/python3.7/site-packages/mindspore/lib/plugin/ascend/libbisheng_kernels.so, result = /home/ma-user/anaconda3/envs/MindSpore/lib/python3.7/site-packages/mindspore/lib/plugin/ascend/libbisheng_kernels.so: cannot open shared object file: No such file or directory, so bisheng kernels are unavailable.
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.851.772 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: COO2CSRAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.851.813 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: CSR2COOAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.851.830 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: CSRDivAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.851.846 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: CSRGatherAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.851.861 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: CSRMMAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.851.878 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: CSRMulAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.851.892 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: CSRMVAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.851.918 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: CSRReduceSumAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.851.933 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ErfAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.851.953 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: EyeAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.851.968 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: FlattenGradAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.851.984 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: MeanGradAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.851.998 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: PullWeightAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.013 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: PushAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.027 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: PushWeightAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.042 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ROIAlignGradAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.058 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: SimpleMeanGradAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.072 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: SubscalarAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.087 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: GatherDGradV2Ascendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.101 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ReshapeAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.116 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: TensorCopySlicesAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.131 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: AdaptiveMaxPool2DAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.145 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ApplyAdadeltaAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.159 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ApplyAdagradAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.178 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ApplyAdaMaxAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.191 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ApplyAddSignAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.205 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ApplyCenteredRMSPropAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.219 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ApplyFtrlAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.234 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ApplyFtrlV2Ascendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.258 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ApplyKerasMomentumAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.273 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ApplyMomentumAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.288 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ApplyPowerSignAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.301 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ApplyProximalAdagradAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.320 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: AvgPool3DAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.334 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ACosGradAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.348 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: BCEWithLogitsLossAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.362 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: BNInferenceAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.376 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: CeLUAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.391 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: DepthwiseConv2dNativeAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.405 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: DivAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.419 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: DropoutDoMaskAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.432 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: FastGeLUAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.451 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: FastGeLUGradAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.465 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: GeLUAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.478 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: GeLUGradAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.492 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: HShrinkAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.505 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: HShrinkGradAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.519 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: HSigmoidAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.533 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: HSigmoidGradAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.554 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: HSwishAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.568 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: HSwishGradAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.582 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: IndexAddAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.596 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: InplaceAddAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.610 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: InplaceSubAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.624 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: InplaceUpdateAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.637 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: InplaceUpdateV2Ascendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.652 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: IOUAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.666 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: KLDivLossAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.679 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: LARSUpdateAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.696 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: LinSpaceAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.729 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: LogSoftmaxAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.743 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: MatrixDiagAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.758 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: MatrixDiagPartAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.772 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: MatrixSetDiagAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.786 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: MaxPool3DGradGradAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.799 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: Im2ColAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.813 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: NewIm2ColAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.828 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ParallelResizeBilinearAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.846 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ParallelResizeBilinearGradAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.860 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: PReLUAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.874 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: PSROIPoolingAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.888 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: PSROIPoolingGradAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.902 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: PReLUGradAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.916 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ReLUAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.931 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ReLU6Ascendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.946 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ReLU6GradAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.960 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ReLUV2Ascendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.974 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ResizeBilinearAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.852.990 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ResizeBilinearGradAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.004 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: SeLUAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.018 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: SmoothL1LossAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.032 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: SmoothL1LossGradAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.045 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: SoftmaxAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.060 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: SoftmaxV2WithDropoutDoMaskV3Ascendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.076 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: SparseApplyAdagradAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.089 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: SparseApplyProximalAdagradAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.104 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: StackAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.118 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: UnstackAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.132 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ApplyAdagradDAAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.146 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: AdamAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.160 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ApplyAdagradV2Ascendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.174 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ApplyAdamWithAmsgradAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.191 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ApplyRMSPropAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.205 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ArgmaxAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.219 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ArgMaxV2Ascendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.234 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ArgminAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.254 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ArgminV2Ascendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.269 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: AvgPoolGradAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.282 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: AvgPoolGradVmAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.299 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: AvgPool3DGradAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.313 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: BatchToSpaceAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.326 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: BatchToSpaceNDAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.340 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: CastAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.354 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ScalarCastAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.368 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ScalarToTensorAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.383 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: TupleToTensorAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.399 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ListToTensorAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.414 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: CentralizationAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.428 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: kClipBoxesAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.442 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ConcatAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.455 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: Conv2DBackpropFilterAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.470 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: Conv2DBackpropInputAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.485 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: Conv2DTransposeAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.504 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: Conv3DBackpropFilterAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.518 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: Conv3DBackpropInputAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.532 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: Conv3DTransposeAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.547 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: CropAndResizeAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.561 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: CumProdAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.576 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: CumSumAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.591 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: CumulativeLogsumexpAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.609 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: DepthwiseConv2dNativeBackpropFilterAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.624 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: DepthwiseConv2dNativeBackpropInputAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.638 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: DropoutDoMaskV3Ascendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.652 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: EuclideanNormAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.667 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ExpandDimsAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.681 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: FillAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.695 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: FillV2Ascendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.711 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: GatherAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.724 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: SparseGatherV2Ascendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.738 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: HistogramFixedWidthAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.752 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: InTopKAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.770 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: MaxPoolV2Ascendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.784 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: OneHotAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.798 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: PadAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.815 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ReduceAllAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.831 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ReduceAnyAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.846 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ReduceMaxAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.860 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ReduceMeanAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.875 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ReduceMinAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.890 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ReduceProdAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.906 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ReduceSumAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.921 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ResizeBilinearV2Ascendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.935 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ResizeNearestNeighborGradAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.949 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ResizeNearestNeighborAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.964 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: ReverseV2Ascendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.978 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: RpnProposalsAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.853.993 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: SpaceToBatchAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.854.008 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: SpaceToBatchNDAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.854.023 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: SparseApplyAdadeltaAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.854.040 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: SparseApplyAdagradV2Ascendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.854.055 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: SparseApplyFtrlAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.854.069 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: SparseApplyFtrlV2Ascendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.854.083 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: SparseApplyRMSPropAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.854.097 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: SplitAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.854.111 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: SplitVAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.854.128 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: StridedSliceAssignAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.854.145 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: StridedSliceAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.854.159 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: TileAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.854.173 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: TransposeAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.854.187 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: UnsortedSegmentMaxAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.854.201 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: UnsortedSegmentMinAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.854.215 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: UnsortedSegmentProdAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.854.231 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: UnsortedSegmentSumAscendtrue
+[DEBUG] PRE_ACT(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.854.245 [mindspore/ccsrc/backend/common/optimizer/op_adaptation_info_factory.cc:88] RegOpAdaptationInfo] Reg op adaptation info to factory, key: TransShapeAscendtrue
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:02.928.691 [mindspore/ccsrc/pybind_api/ir/log_adapter_py.h:33] PyExceptionInitializer] Set exception handler
+[INFO] PARALLEL(21323,ffffa8bbdb70,python):2024-01-03-12:02:05.934.423 [mindspore/ccsrc/frontend/parallel/costmodel_context.cc:30] GetInstance] Create costmodel_context
+[DEBUG] ME(21323:281473512627056,MainProcess):2024-01-03-12:02:05.978.749 [mindspore/_check_jit_forbidden_api.py:44] add jit_forbidden_module_set: set()
+[DEBUG] ME(21323:281473512627056,MainProcess):2024-01-03-12:02:05.979.067 [mindspore/_check_jit_forbidden_api.py:62] add jit_forbidden_method_set: set()
+[DEBUG] PYNATIVE(21323,ffffa8bbdb70,python):2024-01-03-12:02:05.990.251 [mindspore/ccsrc/pipeline/pynative/pynative_execute.cc:183] Init] Init PyNativeExecutor
+[DEBUG] PYNATIVE(21323,ffffa8bbdb70,python):2024-01-03-12:02:05.990.385 [mindspore/ccsrc/pipeline/pynative/forward/forward.cc:309] Init] Init ForwardExecutor
+[DEBUG] VM(21323,ffffa8bbdb70,python):2024-01-03-12:02:05.990.414 [mindspore/ccsrc/backend/graph_compiler/transform.cc:612] SetMindRTEnable] Enable mindRT.
+[DEBUG] ME(21323:281473512627056,MainProcess):2024-01-03-12:02:05.993.134 [mindspore/_check_jit_forbidden_api.py:62] add jit_forbidden_method_set: {'mindspore.common.tensor.Tensor.set_const_arg'}
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:06.177.976 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:199] ConvertTuple] Converting python tuple
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:06.178.204 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:199] ConvertTuple] Converting python tuple
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:06.184.869 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:199] ConvertTuple] Converting python tuple
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.122.969 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.123.503 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.123.658 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.123.703 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.123.830 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.123.870 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.124.002 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.124.043 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.124.168 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.124.206 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.124.395 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.124.433 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.124.555 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.124.595 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.124.736 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.124.776 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.125.110 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.125.167 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.125.294 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.125.334 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.125.456 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.125.495 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.125.620 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.125.655 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.125.769 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.125.804 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.125.977 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.126.018 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.126.202 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.126.243 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.126.416 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.126.454 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.126.635 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.126.676 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.126.851 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.126.891 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.127.020 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.127.060 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.127.229 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.127.269 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.127.387 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.127.423 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.127.548 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.127.583 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.127.700 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.127.734 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.127.858 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.127.896 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.128.016 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.128.053 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.128.230 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.128.273 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.128.399 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.128.440 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.128.562 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.128.602 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.128.745 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.128.785 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.128.901 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.128.937 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.129.053 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.129.093 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.129.295 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.129.339 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.129.472 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.129.512 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.129.640 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.129.680 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.129.914 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.129.958 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.130.354 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.130.401 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.130.530 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.130.566 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.130.689 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.130.728 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.130.843 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.130.883 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.131.000 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.131.039 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.131.151 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.131.184 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.131.457 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.131.501 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.131.669 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.131.708 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.133.906 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.133.963 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.134.112 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.134.152 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.134.290 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.134.335 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.138.691 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.138.747 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.138.888 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.138.926 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.139.086 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.139.126 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.139.247 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.139.283 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.139.432 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.139.473 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.139.615 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.139.654 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.139.802 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.139.839 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.139.981 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.140.019 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.140.156 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.140.195 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.140.342 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.140.380 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.140.642 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.140.698 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.142.201 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.142.245 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.142.444 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.142.481 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.142.651 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.142.692 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.142.839 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.142.877 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.143.030 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.143.069 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.143.218 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.143.257 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.143.377 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.143.416 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.143.560 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.143.598 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.143.720 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.143.758 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.143.895 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.143.933 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.144.064 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.144.101 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.144.225 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.144.260 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.144.506 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.144.546 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.144.672 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.144.730 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.144.898 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.144.940 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.145.089 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.145.128 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.145.483 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.145.528 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.145.649 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.145.686 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.145.813 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.145.849 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.145.965 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.146.002 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.146.130 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.146.168 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.146.413 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.146.452 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.146.559 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.146.592 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.146.717 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.146.754 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.146.868 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.146.904 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.147.060 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.147.102 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.147.258 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.147.296 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.147.444 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.147.485 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.147.689 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.147.730 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.147.855 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.147.892 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.148.008 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.148.045 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.148.174 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.148.210 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.148.325 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.148.362 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.148.475 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.148.635 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.148.923 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.148.967 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.149.083 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.149.123 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.149.328 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.149.623 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.149.669 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.149.794 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.149.832 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.149.961 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.149.998 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.150.143 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.150.183 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.150.323 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.150.362 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.150.478 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.150.518 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.150.633 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.150.668 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.150.790 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.150.829 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.151.048 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.151.092 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.151.238 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.151.277 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.151.415 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.151.453 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.151.574 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.151.613 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.151.902 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.151.946 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.152.061 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.152.095 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.152.233 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.152.270 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.152.454 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.152.490 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.152.672 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.152.726 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.152.985 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.153.029 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.158.779 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.158.841 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.158.982 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.159.025 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.159.152 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.159.187 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.159.311 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.159.349 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.159.486 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.159.523 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.159.644 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.159.680 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.159.805 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.159.842 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.159.960 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.159.995 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.160.105 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.160.150 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.160.280 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.160.316 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.160.426 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.160.463 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.160.587 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.160.622 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] ME(21323:281473512627056,MainProcess):2024-01-03-12:02:07.165.761 [mindspore/_check_jit_forbidden_api.py:62] add jit_forbidden_method_set: {'mindspore.common.tensor.Tensor.set_const_arg', 'mindspore.common.parameter.Parameter.set_data'}
+[DEBUG] ME(21323:281473512627056,MainProcess):2024-01-03-12:02:07.165.963 [mindspore/_check_jit_forbidden_api.py:62] add jit_forbidden_method_set: {'mindspore.nn.cell.Cell.trainable_params', 'mindspore.common.tensor.Tensor.set_const_arg', 'mindspore.common.parameter.Parameter.set_data'}
+[DEBUG] ME(21323:281473512627056,MainProcess):2024-01-03-12:02:07.166.068 [mindspore/_check_jit_forbidden_api.py:62] add jit_forbidden_method_set: {'mindspore.nn.cell.Cell.trainable_params', 'mindspore.nn.cell.Cell.untrainable_params', 'mindspore.common.tensor.Tensor.set_const_arg', 'mindspore.common.parameter.Parameter.set_data'}
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.166.691 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.166.750 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.166.915 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.166.959 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.167.103 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.167.145 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.167.279 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.167.319 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.167.548 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.167.593 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.169.696 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.169.753 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.169.900 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.169.948 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.170.088 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.170.134 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] COMMON(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.170.451 [mindspore/ccsrc/pybind_api/ir/tensor_py.cc:273] MakeTensor] data_type: 34, buf_type: 35
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.170.911 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.170.962 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.171.099 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.171.146 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.171.591 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.171.643 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.171.792 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.171.835 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.171.969 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.172.007 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.174.537 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.174.597 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.174.797 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.174.839 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.185.807 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.185.868 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.186.391 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.186.440 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.186.715 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.186.761 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.186.927 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.186.976 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.187.244 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.187.288 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.187.446 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.187.484 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.187.689 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.187.735 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.187.911 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.187.951 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.188.091 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.188.131 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.188.246 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.188.285 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.189.306 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.189.360 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.190.169 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.190.220 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.191.161 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.191.216 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.191.423 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.191.463 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.191.608 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.191.655 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.192.172 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.192.231 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.192.448 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.192.492 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.198.713 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.198.774 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.198.931 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.198.972 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.199.109 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.199.146 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.199.280 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.199.314 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.199.447 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.199.483 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.199.732 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.199.777 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.199.903 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.199.945 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.201.025 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.201.083 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.201.222 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.201.267 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.210.838 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.210.897 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] COMMON(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.223.416 [mindspore/ccsrc/pybind_api/ir/tensor_py.cc:273] MakeTensor] data_type: 43, buf_type: 43
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.239.724 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.239.792 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.239.982 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.240.025 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.240.170 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.240.209 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.240.356 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.240.396 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] COMMON(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.242.130 [mindspore/ccsrc/pybind_api/ir/tensor_py.cc:273] MakeTensor] data_type: 34, buf_type: 35
+[DEBUG] COMMON(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.242.262 [mindspore/ccsrc/pybind_api/ir/tensor_py.cc:273] MakeTensor] data_type: 43, buf_type: 35
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.252.785 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.252.841 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.253.063 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.253.107 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.253.474 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.253.520 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.254.747 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.254.803 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.255.841 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.255.898 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.257.124 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.257.182 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.327.002 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.327.072 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.327.266 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.327.311 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.327.466 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.327.507 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.327.639 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.327.678 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.381.048 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.381.116 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.381.318 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.381.359 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.876.830 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.876.929 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.877.207 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.877.252 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.877.493 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.877.535 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] COMMON(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.879.867 [mindspore/ccsrc/pybind_api/ir/tensor_py.cc:273] MakeTensor] data_type: 34, buf_type: 35
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.880.206 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.880.258 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.880.437 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.880.473 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.880.643 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.880.680 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.880.922 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.880.961 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.881.141 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.881.180 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.881.345 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.881.381 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.881.540 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.881.578 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.881.829 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.881.868 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.882.108 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.882.152 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.882.325 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.882.361 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.882.651 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.882.694 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.882.811 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.882.847 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.882.975 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.883.011 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.899.325 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.899.389 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.899.649 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.899.695 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.899.898 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.899.943 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.900.131 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.900.168 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.900.345 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.900.391 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.900.641 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.900.682 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.900.839 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] PARSER(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.900.884 [mindspore/ccsrc/pipeline/jit/parse/data_converter.cc:229] ConvertList] Converting python list
+[DEBUG] COMMON(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.901.057 [mindspore/ccsrc/pybind_api/ir/tensor_py.cc:273] MakeTensor] data_type: 43, buf_type: 44
+Traceback (most recent call last):
+  File "main.py", line 10, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.919.850 [mindspore/ccsrc/pipeline/jit/init.cc:515] operator()] Start releasing dataset handles...
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.919.891 [mindspore/ccsrc/pipeline/jit/init.cc:518] operator()] End release dataset handles.
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.919.911 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2226] ClearResAtexit] Pipeline clear all resource
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.919.978 [mindspore/ccsrc/pipeline/jit/pipeline.cc:279] RecordExitStatus] Status record: system exit.
+[INFO] DEBUG(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.920.030 [mindspore/ccsrc/common/debug/env_config_parser.cc:152] ParseFromFile] The 'env_config_path' in 'mindspore.context.set_context(env_config_path={path})' is empty.
+[INFO] ME(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.920.114 [mindspore/core/mindrt/src/actor/actormgr.cc:153] Finalize] mindrt Actors finish exiting.
+[INFO] ME(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.920.128 [mindspore/core/mindrt/src/actor/actormgr.cc:156] Finalize] mindrt Threads finish exiting.
+[INFO] ME(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.920.140 [mindspore/core/mindrt/src/actor/actormgr.cc:167] Finalize] mindrt IOMGRS finish exiting.
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.920.178 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2101] ClearResPart1] Start clear kernel runtime...
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.920.200 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2103] ClearResPart1] End clear kernel runtime.
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.920.211 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2106] ClearResPart1] Start Finalize StreamSynchronizer...
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.920.234 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2108] ClearResPart1] End Finalize StreamSynchronizer...
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.921.162 [mindspore/ccsrc/pipeline/jit/pipeline.cc:704] ClearRes] Clean executor resource!
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.921.185 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2123] ClearResPart2] Start clear PyNativeExecutor...
+[DEBUG] DEVICE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.921.208 [mindspore/ccsrc/runtime/pynative/op_executor.cc:41] ClearResources] Start clear tasks
+[DEBUG] DEVICE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.921.220 [mindspore/ccsrc/runtime/pynative/op_executor.cc:48] ClearResources] End clear tasks
+[DEBUG] PYNATIVE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.921.315 [mindspore/ccsrc/pipeline/pynative/forward/forward.cc:766] ClearRes] Clear forward res
+[DEBUG] PYNATIVE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.921.347 [mindspore/ccsrc/pipeline/pynative/grad/grad.cc:1531] ClearRes] Clear grad res
+[DEBUG] PYNATIVE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.921.371 [mindspore/ccsrc/pipeline/pynative/pynative_execute.cc:179] ClearRes] Clear all res
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.921.382 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2125] ClearResPart2] End clear PyNativeExecutor.
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.921.394 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2141] ClearResPart2] Start clear ConfigManager...
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.921.405 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2143] ClearResPart2] End clear ConfigManager.
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.921.415 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2151] ClearResPart2] Start clear device context...
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.921.427 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2153] ClearResPart2] End clear device context.
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.921.438 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2155] ClearResPart2] Start clear AnalysisResultCacheMgr...
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.921.459 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2157] ClearResPart2] End clear AnalysisResultCacheMgr.
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.921.470 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2159] ClearResPart2] Start clear AnalysisContext...
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.921.491 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2161] ClearResPart2] End clear AnalysisContext...
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.921.501 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2163] ClearResPart2] Start clear AnalysisSchedule...
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.922.006 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2165] ClearResPart2] End clear AnalysisSchedule...
+[INFO] DEBUG(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.922.055 [mindspore/ccsrc/debug/debugger/debugger.cc:101] Debugger] Debugger got device_target: Ascend
+[INFO] DEBUG(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.922.084 [mindspore/ccsrc/debug/debugger/debugger.cc:305] Reset] Release Debugger resource.
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.922.097 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2176] ClearResPart3] Start clear ClearObjectCache...
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.922.109 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2178] ClearResPart3] End clear ClearObjectCache...
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.922.120 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2180] ClearResPart3] Start clear Parser...
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.922.133 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2182] ClearResPart3] End clear Parser...
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.922.143 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2184] ClearResPart3] Start ClearTraceStack...
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.922.157 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2186] ClearResPart3] End ClearTraceStack...
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.922.167 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2188] ClearResPart3] Start clear InterpretNodeRecorder...
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.922.180 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2190] ClearResPart3] End clear InterpretNodeRecorder...
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.922.191 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2192] ClearResPart3] Start clear parallel::entire_costgraph...
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.922.214 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2194] ClearResPart3] End clear parallel::entire_costgraph...
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.922.225 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2196] ClearResPart3] Start clear ProtobufLibrary...
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.922.529 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2198] ClearResPart3] End clear ProtobufLibrary...
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.922.544 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2200] ClearResPart3] Start clear python_adapter...
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.922.556 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2202] ClearResPart3] End clear python_adapter.
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.922.567 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2206] ClearSingleton] Start clear singleton...
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.922.746 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2222] ClearSingleton] End clear singleton.
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.922.759 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2236] ClearResAtexit] Start unload dynamic lib...
+[INFO] PIPELINE(21323,ffffa8bbdb70,python):2024-01-03-12:02:07.922.802 [mindspore/ccsrc/pipeline/jit/pipeline.cc:2238] ClearResAtexit] End unload dynamic lib...
