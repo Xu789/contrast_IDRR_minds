@@ -2,17 +2,14 @@
 
 import argparse
 import logging
-import os
+
 import mindspore
-import random
 
-import numpy as np
-import torch
-# torch.cuda.set_device(4)
-# print(torch.cuda.current_device() ) # 返回当前设备索引
-import torch.nn as nn
 
-from SupConLoss import  InstanceAnchor, LabelAnchor
+from mindspore.nn  import CrossEntropyLoss
+
+
+from SupConLoss import  Instance2label, Label2label
 from config import Config
 from model.contrast import ContrastModel
 from process.pdtb_dataset import Pdtb2Dataset, Pdtb3Dataset
@@ -20,19 +17,7 @@ from mindspore import context
 
 from train import train_one_epoch, test
 
-# from process_data.dataset import Data
 
-#
-# def set_seed(args):
-#     random.seed(args.seed)
-#     np.random.seed(args.seed) # numpy产生的随机数一致
-#     mindspore.manual_seed(args.seed)  # 让cpu产生的随机数一致
-#     mindspore.cuda.manual_seed(args.seed) # 为当前GPU设置随机种子
-#     if args.n_gpu > 0:
-#         mindspore.cuda.manual_seed_all(args.seed)  #让显卡产生的随机数一致
-#
-#     mindspore.backends.cudnn.deterministic = True
-#     mindspore.backends.cudnn.benchmark = False
 
 
 def log():
@@ -63,7 +48,7 @@ def parse():
     parser.add_argument('-ml', '--max_length', type=int, default=100,
                         help='the max length for arg1+arg2')
 
-    parser.add_argument('-pgtbs', '--per_gpu_train_batch_size', type=int, default=128,
+    parser.add_argument('-pgtbs', '--per_gpu_train_batch_size', type=int, default=8,
                         help='the batch size for per gpu device in the training..')
     parser.add_argument('-ng', '--n_gpu', type=int, default=1,
                         help='choose the number of cuda')
@@ -84,13 +69,13 @@ def parse():
 
     parser.add_argument('--seed', type=int, default=40,
                         help='the random seed for initialization')
-    parser.add_argument('-nte', '--num_train_epochs', type=int, default=20,
+    parser.add_argument('-nte', '--num_train_epochs', type=int, default=100,
                         help='the num epoches for training...')
     parser.add_argument('-gas', '--gradient_accumulation_steps', type=int, default=1,
                         help="Number of updates steps to accumulate before performing a backward/update pass.")
     parser.add_argument("--weight_decay", default=0.05, type=float,
                         help="weight_decay.")
-    parser.add_argument("--learning_rate", default=2e-4, type=float,
+    parser.add_argument("--learning_rate", default=1e-5, type=float,
                         help="weight_decay.") # 5e-6
     parser.add_argument("--adam_epsilon", default=1e-6, type=float,
                         help="weight_decay.")
@@ -137,7 +122,7 @@ def parse():
     parser.add_argument('--temperature', default=0.5, type=float,
                         help='the lambda for the weight of contrast loss.' )
 
-    parser.add_argument('-pbn', '--print_batch_num', default=50, type=int,
+    parser.add_argument('--print_batch_num', default=50, type=int,
                         help='the num for print acc/f1 information' )
 
 
@@ -148,12 +133,11 @@ def parse():
 
 def main():
     args = parse().parse_args()
-    print('args: {}'.format(args.__dict__))
 
-    # mindspore.set_context(device_target="GPU")
-    context.set_context(mode=context.GRAPH_MODE, device_target="CPU")
+    context.set_context(device_target="GPU")
     mindspore.set_context(mode=mindspore.PYNATIVE_MODE, pynative_synchronize=True)
     logger = log()
+    logger.info('args: {}'.format(args.__dict__))
 
 
     # 获取数据
@@ -163,12 +147,12 @@ def main():
             print(len(batch))
     config = Config(args)
 
-    kwargs = {'cross_loss': nn.CrossEntropyLoss(),
+    kwargs = {'cross_loss': CrossEntropyLoss(),
             # 'euc_loss': nn.PairwiseDistance(p=2.0),  # Euclidean
             # 'con_loss': SupConLossSec(temp=args.temperature),
             # 'con_loss': SupConLoss(args.n_class, args.per_gpu_train_batch_size, w_13=1.5, w_23=1),
-            'instance_loss': InstanceAnchor(temp=args.temperature),
-            'label_loss': LabelAnchor(temp=args.temperature),
+            'instance_loss': Instance2label(args, args.temperature),
+            'label_loss': Label2label(args, args.temperature),
             'LabelRegularizer':None,
             'lamb_cross':args.lamb_cross,
             'lamb_euc':args.lamb_euc,
@@ -182,6 +166,11 @@ def main():
         train_one_epoch(data, model, logger, args,  config, k, **kwargs)
 
 
-
 if __name__ == '__main__':
     main()
+    # import mindspore
+    # from mindnlp.transformers import RobertaTokenizer, RobertaModel
+    #
+    # embedding = RobertaModel.from_pretrained('roberta-base').embeddings
+    # tokenizer = RobertaTokenizer.from_pretrained('roberta-base')
+    # input_ids = mindspore.tensor(mindspore.numpy.rand((117, 512)))

@@ -44,13 +44,13 @@ def compute_confusion_matrix(preds, label1, label2, n):
             'f1':f1}
 
 
-# def compute_acc_f1(fir_preds, fir_truth, sec_preds, sec_truth, conn_preds, conn_truth, args, config):
-def compute_acc_f1(fir_preds, fir_truth, args, config):
+def compute_acc_f1(fir_preds, fir_truth, sec_preds, sec_truth, conn_preds, conn_truth, args, config):
+# def compute_acc_f1(fir_preds, fir_truth, args, config):
 
-    fir_f1 = f1_score(fir_truth, fir_preds, average=None)
-    fir_acc = precision_score(fir_truth, fir_preds, average='micro'),
-    fir_macro_f1 = np.mean(fir_f1)
-    return fir_acc[0], fir_macro_f1
+    # fir_f1 = f1_score(fir_truth, fir_preds, average=None)
+    # fir_acc = precision_score(fir_truth, fir_preds, average='micro'),
+    # fir_macro_f1 = np.mean(fir_f1)
+    # return fir_acc[0], fir_macro_f1
 
     """
     @param preds:
@@ -61,17 +61,17 @@ def compute_acc_f1(fir_preds, fir_truth, args, config):
 
     # fir_f1_res, sec_f1_res, conn_f1_res = defaultdict(float), defaultdict(float), defaultdict(float)
     # # acc = precision_score(truth, preds, average=None)  #返回列表，列表中为每个类的精确度acc
-    # fir_f1, sec_f1, conn_f1 = f1_score(fir_truth, fir_preds, average=None),\
-    #                           f1_score(sec_truth, sec_preds, average=None),\
-    #                           f1_score(conn_truth, conn_preds, average=None)
-    # fir_acc, sec_acc, conn_acc = precision_score(fir_truth, fir_preds, average='micro'),\
-    #                              precision_score(sec_truth, sec_preds, average='micro'),\
-    #                              precision_score(conn_truth, conn_preds, average='micro')
-    #
-    # fir_macro_f1 = np.mean(fir_f1)
-    # sec_marco_f1 = np.mean(sec_f1)
-    # conn_marco_f1 = np.mean(conn_f1)
-    #
+    fir_f1, sec_f1, conn_f1 = f1_score(fir_truth, fir_preds, average=None),\
+                              f1_score(sec_truth, sec_preds, average=None),\
+                              f1_score(conn_truth, conn_preds, average=None)
+    fir_acc, sec_acc, conn_acc = precision_score(fir_truth, fir_preds, average='micro'),\
+                                 precision_score(sec_truth, sec_preds, average='micro'),\
+                                 precision_score(conn_truth, conn_preds, average='micro')
+
+    fir_macro_f1 = np.mean(fir_f1)
+    sec_marco_f1 = np.mean(sec_f1)
+    conn_marco_f1 = np.mean(conn_f1)
+
     #
     #
     # for i in range(min(4, len(fir_preds))):
@@ -81,13 +81,14 @@ def compute_acc_f1(fir_preds, fir_truth, args, config):
     #     sec_f1_res[config.sec_sense[i]] = sec_f1[i]
     # for i in range(min(102, len(conn_preds))):
     #     conn_f1_res[config.con_sense[i]] = conn_f1_res[i]
+    return fir_acc, fir_macro_f1, sec_acc, sec_marco_f1, conn_acc, conn_marco_f1
 
-    # return fir_acc, fir_macro_f1, sec_acc, sec_marco_f1, conn_acc, conn_marco_f1
 
-    fir_f1 = f1_score(fir_truth, fir_preds, average=None)
-    fir_acc = precision_score(fir_truth, fir_preds, average='micro'),
-    fir_macro_f1 = np.mean(fir_f1)
-    return fir_acc[0], fir_macro_f1
+
+    # fir_f1 = f1_score(fir_truth, fir_preds, average=None)
+    # fir_acc = precision_score(fir_truth, fir_preds, average='micro'),
+    # fir_macro_f1 = np.mean(fir_f1)
+    # return fir_acc[0], fir_macro_f1
 
 
 

@@ -5,134 +5,133 @@ import numpy as np
 import copy
 from mindspore import context
 
-class InstanceAnchor(nn.Cell):
-    def __init__(self, temp):
-        super(InstanceAnchor, self).__init__()
-        # self.alpha = alpha
-        self.temp = temp
 
-    def forward(self, instance, label_embeds, firlabel, seclabel, connlabel):
-        # instance: [batch, hidden_state], label_embeds: [label_num, hidden_state], label: [batch]
-        # device = (torch.device('cuda')
-        #           if instance.is_cuda
-        #           else torch.device('cpu'))
-        context.set_context(mode=context.GRAPH_MODE, device_target="CPU")
-        instance = F.normalize(instance, dim=-1)
-        label_embeds = F.normalize(label_embeds, dim=-1)
-        batch_size = instance.shape(0)
-        label_num = label_embeds.shape(0)
+class Instance2label(nn.Cell):
+    def __init__(self, args, temperature=0.5):
+        super(Instance2label, self).__init__()
+        self.temperature = temperature
+        self.args = args
+        self.l2_normalize = mindspore.ops.L2Normalize(axis=1)
+    def construct(self, instance, label_embeds, connlabel):
+        """
+        @param instance: [batch, 768]
+        @param label_embeds: [117, 768]
+        @param connlabel: [batch]
+        @return:
+        """
+        instance = self.l2_normalize(instance)
+        label_embeds = self.l2_normalize(label_embeds)
+        batch_size = instance.shape[0]
 
-        fir_pos_mask, sec_pos_mask, conn_pos_mask = np.zeros((batch_size, 4)), \
-                                                    np.zeros((batch_size, 11)),\
-                                                    np.zeros((batch_size, 102))
+
+
+
+
+
+
+        if self.args.pdtb_version == 2:
+            instance_dot_label = mindspore.ops.mm(instance, label_embeds[15:].T) / self.temperature
+            conn_pos_mask = np.zeros((batch_size, 102))
+        else:
+            instance_dot_label = mindspore.ops.mm(instance, label_embeds[18:].T) / self.temperature
+            conn_pos_mask = np.zeros((batch_size, 181))
         for i in range(batch_size):
-            fir_pos_mask[i][firlabel[i]] = 1
-            sec_pos_mask[i][seclabel[i]] = 1
             conn_pos_mask[i][connlabel[i]] = 1
-
-        fir_pos_mask = mindspore.tensor(fir_pos_mask)
-        sec_pos_mask = mindspore.tensor(sec_pos_mask)
         conn_pos_mask = mindspore.tensor(conn_pos_mask)
 
-        loss = 0
-        for l in range(3):
-            if l==0:
-                instance_dot_label = mindspore.ops.mm(instance, label_embeds[0:4].T) / self.temp
-                label, pos_mask = firlabel, fir_pos_mask
+        logits_max, _ = mindspore.ops.max(instance_dot_label, axis=1, keepdims=True)
+        logits = instance_dot_label - logits_max
 
-            elif l==1:
-                instance_dot_label = mindspore.ops.mm(instance, label_embeds[4:15].T) / self.temp
-                label, pos_mask = seclabel, sec_pos_mask
+        exp_logits = mindspore.ops.exp(logits)  # exp_logits: [batch, label_num]
+        denominator = mindspore.ops.log(exp_logits.sum(axis=1) + 1e-12)
+        molecule = mindspore.ops.log(mindspore.ops.mul(exp_logits, conn_pos_mask).sum(axis=1))
+        log_prob = molecule - denominator
+        return -log_prob.sum(axis=0) / batch_size
+
+class Label2label(nn.Cell):
+    def __init__(self, args, temperature=0.5):
+        super(Label2label, self).__init__()
+        self.temperature = temperature
+        self.args = args
+        self.zero = mindspore.tensor(0)
+        self.zero.requires_grad = False
+        self.l2_normalize = mindspore.ops.L2Normalize(axis=1)
+    def del_tensor_elem(self, x, index):
+        """
+        @param x: 删除tensor_x中位置为index的索引值，x: [batch, 117, 768]
+        @param index: [batch]
+        @return: [batch, 101, 768]
+        """
+        for i in range(x.size(0)):
+            temp = mindspore.ops.cat((x[i][15:index[i]+15], x[i][index[i]+15+1:]), axis=0).unsqueeze(0)
+            if i == 0:
+                res = temp
             else:
-                instance_dot_label = mindspore.ops.mm(instance, label_embeds[15:].T) / self.temp
-                label, pos_mask = connlabel, conn_pos_mask
+                res = mindspore.ops.cat((res, temp), axis=0)
 
-            logits_max, _ = mindspore.ops.max(instance_dot_label, axis =1, keepdims=True)
-            logits = instance_dot_label - logits_max.data
-            exp_logits = mindspore.ops.exp(logits)  # exp_logits: [batch, label_num]
-            denominator = mindspore.ops.log(exp_logits.sum(dim=1) + 1e-12)
-            molecule = mindspore.ops.log((exp_logits * pos_mask).sum(dim=1))
-            log_prob = molecule - denominator
-            hie_loss = -log_prob.mean()
+        return res
+    def construct(self, label_embeds, firlabel, seclabel, connlabel):
+        """
+        @param label_embeds: [117, 768]
+        @param firlabel: [batch]
+        @param seclabel: [batch]
+        @param connlabel: [batch]
+        @return: loss
+        """
 
-            loss += hie_loss
+        label_embeds = self.l2_normalize(label_embeds)
+        batch_size = firlabel.shape[0]
+        fir_labels, sec_labels, conn_labels = None, None, None
 
-        return loss / 3
+        # indices = torch.cat((firlabel, seclabel, connlabel), dim=0)
+        # indices = indices.transpose(0, 1) # indices:[batch, 3]，生成的层次化标签索引
+        for j in range(3):
+            res = None
+            for i in range(batch_size):
+                if j == 0:
+                    temp = mindspore.ops.index_select(label_embeds, 0, firlabel.unsqueeze(-1)[i])
+                elif j == 1:
+                    temp = mindspore.ops.index_select(label_embeds, 0, seclabel.unsqueeze(-1)[i])
+                else:
+                    temp = mindspore.ops.index_select(label_embeds, 0, connlabel.unsqueeze(-1)[i])
+                if i == 0:
+                    res = temp
+                if i != 0:
+                    res = mindspore.ops.cat((res, temp), axis=0)
+            if j == 0:
+                fir_labels = res  # fir_label: [batch, 768]
+            if j == 1:
+                sec_labels = res
+            if j == 2:
+                conn_labels = res #
 
-class LabelAnchor(nn.Cell):
-    def __init__(self, temp):
-        super(LabelAnchor, self).__init__()
-        # self.alpha = alpha
-        self.temp = temp
+        if self.args.pdtb_version == 2:
+            batch_conn_labels = mindspore.ops.tile(label_embeds.unsqueeze(0), (batch_size,1,1))[:, 15: ,:]  # batch_conn_labels: [batch, 102, 768]
+        else:
+            batch_conn_labels = mindspore.ops.tile(label_embeds.unsqueeze(0), (batch_size,1,1))[:, 18: ,:]
+        # molecule_conn_sec， molecule_conn_fir：；论文中对比损失函数的分子部分， [batch]
 
-    def forward(self, instance, label_embeds, firlabel, seclabel, connlabel):
-        # instance: [batch, hidden_state], label_embeds: [label_num, hidden_state], label: [batch]
-        # device = (torch.device('cuda')
-        #           if instance.is_cuda
-        #           else torch.device('cpu'))
-        context.set_context(mode=context.GRAPH_MODE, device_target="CPU")
-        instance = F.normalize(instance, dim=-1)
-        label_embeds = F.normalize(label_embeds, dim=-1)
-        batch_size = instance.size(0)
-        label_num = label_embeds.size(0)
+        ##归一化
+        conn_max, _ = mindspore.ops.max(conn_labels, axis=1, keepdims=True)
+        conn_labels_ = conn_labels - conn_max
+        sec_max, _ = mindspore.ops.max(sec_labels, axis=1, keepdims=True)
+        sec_labels_ = sec_labels - sec_max
+        fir_max, _ = mindspore.ops.max(fir_labels, axis=1, keepdims=True)
+        fir_labels_ = fir_labels - fir_max
 
+        molecule_conn_sec = mindspore.ops.mul(conn_labels_, sec_labels_).sum(axis=1) / self.temperature
+        molecule_conn_fir = mindspore.ops.mul(conn_labels_, fir_labels_).sum(axis=1) / self.temperature
+        molecule_conn_sec = mindspore.ops.log(molecule_conn_sec)
+        molecule_conn_fir = mindspore.ops.log(molecule_conn_fir)
+        # molecule_conn_sec, molecule_conn_fir = torch.log(molecule_conn_sec), torch.log(molecule_conn_fir)
+        # neg_conn_labels = self.del_tensor_elem(batch_conn_labels, connlabel)  # neg_conn_labels: [batch, 101, 768]
+        denominator = mindspore.ops.bmm(conn_labels_.unsqueeze(1), batch_conn_labels.transpose(0,2,1)) # denominator: [batch, 1, 102]
 
-        fir_pos_mask, sec_pos_mask, conn_pos_mask = np.zeros((4, batch_size)),\
-                                                    np.zeros((11, batch_size)),\
-                                                    np.zeros((102, batch_size))
+        denominator = mindspore.ops.exp(denominator)
+        denominator = denominator.squeeze(1).sum(axis=1) / self.temperature # denominator: [batch]
+        denominator = mindspore.ops.log(denominator)
+        pair_conn_sec = -(molecule_conn_sec - denominator)
+        pair_conn_fir = -(molecule_conn_fir - denominator)
+        loss = mindspore.ops.max(self.zero,(pair_conn_sec-pair_conn_fir).sum(axis=0) / batch_size)[0]
 
-        for i in range(4):
-            for j in range(batch_size):
-                if firlabel[j] == i:
-                    fir_pos_mask[i][j] = 1
-        for i in range(11):
-            for j in range(batch_size):
-                if seclabel[j] == i:
-                    sec_pos_mask[i][j] = 1
-        for i in range(102):
-            for j in range(batch_size):
-                if connlabel[j] == i:
-                    conn_pos_mask[i][j] = 1
-
-        fir_pos_mask, sec_pos_mask, conn_pos_mask = mindspore.tensor(fir_pos_mask),\
-                                                    mindspore.tensor(sec_pos_mask),\
-                                                    mindspore.tensor(conn_pos_mask)
-
-
-        loss = 0
-        for l in range(3):
-            if l==0:
-                label_dot_instance = mindspore.ops.mm(label_embeds[0:4], instance.T) / self.temp
-                label, pos_mask = firlabel, fir_pos_mask
-            elif l==1:
-                label_dot_instance = mindspore.ops.mm(label_embeds[4:15], instance.T) / self.temp
-                label, pos_mask = seclabel, sec_pos_mask
-            else:
-                label_dot_instance = mindspore.ops.mm(label_embeds[15:], instance.T) / self.temp
-                label, pos_mask = connlabel, conn_pos_mask
-
-            logits_max, _ = mindspore.ops.max(label_dot_instance, dim=1, keepdim=True)
-            logits = label_dot_instance - logits_max.detach()
-            exp_logits = mindspore.ops.exp(logits)  # exp_logits: [label_num, batch]
-
-            denominator = mindspore.ops.log(exp_logits.sum(dim=1) + 1e-12)
-            # denominator:[label_num]
-            # molecule = torch.log((exp_logits * positive_mask).sum(dim=1))
-            # molecule : [label_num]
-            wolog_molecule = (exp_logits * pos_mask).sum(dim=-1)
-
-            # num_positives_per_row = copy.deepcopy(wolog_molecule)
-            # wolog_molecule = torch.where(torch.isinf(wolog_molecule), torch.full_like(wolog_molecule, 1), wolog_molecule)
-            molecule = mindspore.ops.log(wolog_molecule)
-            log_prob = molecule - denominator
-            # log_prob：[label_num]
-            hie_loss = - log_prob[wolog_molecule > 0].mean()
-            loss += hie_loss
-
-
-
-        return loss / 3
-
-
-
-
+        return loss

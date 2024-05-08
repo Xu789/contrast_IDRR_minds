@@ -2,6 +2,8 @@
 import mindspore.nn as nn
 import mindspore
 from mindspore.ops import Dropout
+
+
 from mindnlp.transformers import RobertaTokenizer, RobertaModel
 
 import numpy as np
@@ -33,7 +35,7 @@ class ContrastModel(nn.Cell):
         self.tokenizer = RobertaTokenizer.from_pretrained(args.model_path,from_pt=True)
 
         # bert_config = BertConfig.from_pretrained(args.model_path)
-        self.embedding = RobertaModel.from_pretrained(args.model_path).embeddings
+        self.embedding = RobertaModel.from_pretrained(args.model_path)
         # self.embedding.requires_grad = False
         self.dropout = Dropout(0.07)
 
@@ -45,6 +47,9 @@ class ContrastModel(nn.Cell):
 
         self.ec_label= self.tokenizer(self.label_name, padding='max_length', truncation=True)
         #  self.ec_label: self.encoded_labels: [117, 10]
+        self.input_ids = mindspore.tensor(self.ec_label['input_ids'])
+        self.label_embeds = self.embedding(self.input_ids)[0].sum(axis=1)
+        # self.label_embeds = mindspore.Parameter(self.label_embeds)
         print(type(mindspore.tensor(self.ec_label['input_ids'])))
         # self.label_embeds = self.embedding(mindspore.tensor(self.ec_label['input_ids'])).sum(dim=1)
         # self.label_embeds = self.label_embeds.sum(dim=1)
@@ -97,8 +102,9 @@ class ContrastModel(nn.Cell):
         # loss = 0.0
         # return_dict = return_dict if return_dict is not None else self.config.use_return_dict
         contrast_mask = None
-        label_embeds = self.embedding(mindspore.tensor(self.ec_label['input_ids']))
-        label_embeds = label_embeds.sum(axis=1)
+
+        # label_embeds = self.embedding(self.input_ids)
+        # label_embeds = label_embeds.sum(axis=1)
 
         # self.bert_model =  ms_function(fn=self.model)
         outputs = self.model(
@@ -110,9 +116,16 @@ class ContrastModel(nn.Cell):
         # outputs[0]为last_hidden_state, [batch, seq_len, 768]
         # self.pooler类获取序列第一个词[CLS]的隐藏层表示
         pooled_output = outputs[0]
-        mask_repr = pooled_output[mask_idxs == 1]
-        sen_repr = (outputs[0].sum(dim=1) / outputs[0].size(1) - mask_repr) * 0.1 + mask_repr * 0.9
-        sen_repr = self.dropout(sen_repr)
+
+        # mask_repr = pooled_output[mask_idxs == True]
+        # mask_idxs=mindspore.ops.unsqueeze(mask_idxs,2).repeat(768,axis=2)
+
+        mask_repr = mindspore.ops.masked_select(pooled_output, mask_idxs)
+
+        mask_repr = mask_repr.view(mask_repr.size//768, 768)
+
+        sen_repr = (outputs[0].sum(axis=1) / outputs[0].shape[1] - mask_repr) * 0.1 + mask_repr * 0.9
+        sen_repr = self.dropout(sen_repr)[0]
 
         fir_logits = self.fir_classifier(sen_repr)
         sec_logits = self.sec_classifier(sen_repr)
@@ -124,5 +137,5 @@ class ContrastModel(nn.Cell):
             'conn_logits': conn_logits,
             'mask_repr': mask_repr,
             'sen_repr': sen_repr,
-            'label_embeds': label_embeds,
+            'label_embeds': self.label_embeds,
         }

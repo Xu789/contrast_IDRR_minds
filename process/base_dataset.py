@@ -62,8 +62,6 @@ class BasePdtbDataset:
             self.conn2i = dict((s,i)  for (i,s) in enumerate(self.conn) )
 
 
-
-
         else:
             self.sec_sense = [
                 'Temporal.Asynchronous', 'Temporal.Synchronous', 'Contingency.Cause',
@@ -184,13 +182,12 @@ class BasePdtbDataset:
                 mask_idx[self.dataset.iloc[item]['arg1_length'] + 1] = 1
             else:
                 mask_idx[0] = 1
-
             return \
                 np.array(input['input_ids'], np.int32), np.array(input['attention_mask'], np.int32), \
                    np.array(self.fir_sense2i[self.dataset.iloc[item]['ConnHeadSemClass1Fir']], np.int32), \
                    np.array(self.sec_sense2i[self.dataset.iloc[item]['ConnHeadSemClass1Sec']], np.int32), \
                    np.array(self.conn2i[self.dataset.iloc[item]['Conn1']], np.int32), \
-                   np.array(mask_idx, np.int32)
+                   np.repeat(np.expand_dims(np.array(mask_idx, dtype=bool), axis=1), 768, 1)
 
         if self.args.pdtb_version == 3:
             arg = CLS + self.dataset.iloc[item]['arg1'] + MASK + self.dataset.iloc[item]['arg2'] + SEP
@@ -200,14 +197,12 @@ class BasePdtbDataset:
                 mask_idx[self.dataset.iloc[item]['arg1_length'] + 1] = 1
             else:
                 mask_idx[0] = 1
+
             return np.array(input['input_ids'], np.int32), \
                    np.array(input['attention_mask'], np.int32), \
                    np.array(self.fir_sense2i[self.dataset.iloc[item]['label']], np.int32) if self.mode == 'train' else np.array(self.fir_sense2i[self.dataset.iloc[item]['label1']], np.int32), \
                    np.array(self.sec_sense2i[self.dataset.iloc[item]['ConnHeadSemClass1Sec']], np.int32),  \
-                   np.array(mask_idx, np.int32)
-
-
-
+                   np.repeat(np.expand_dims(np.array(mask_idx, dtype=bool), axis=1), 768, 1)
 
     def __len__(self):
         return len(self.dataset)
